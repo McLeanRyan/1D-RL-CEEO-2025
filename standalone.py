@@ -665,8 +665,9 @@ def main():
     
     rewards_history = []
     timesteps = []
-    
-    EPISODES = 5
+
+    # Student TODO: Try changing these values
+    EPISODES = 10
     TIMESTEPS = 15
     
     for i in range(EPISODES):
