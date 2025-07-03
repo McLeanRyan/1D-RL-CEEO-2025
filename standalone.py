@@ -444,8 +444,8 @@ def calibrate_states():
     display.fill(0)
     display.text(f"State {current_position}", 30, 5)
     display.text("SELECT=save", 20, 20)
-    display.text("DOWN=next/-20", 15, 30)
-    display.text("UP=finish/POT", 15, 40)
+    display.text("UP=next/-20", 15, 30)
+    display.text("DOWN=finish/POT", 15, 40)
     display.text(f"Angle: {servo_angle}", 20, 50)
     display.show()
     
@@ -487,7 +487,7 @@ def calibrate_states():
                 display.text(f"State {current_position}", 30, 5)
                 display.text("POT CONTROL", 25, 15)
                 display.text("SELECT=save", 20, 25)
-                display.text("UP=exit POT", 20, 35)
+                display.text("DOWN=exit POT", 20, 35)
                 display.text(f"Angle: {servo_angle}", 20, 45)
                 display.text(f"V: {voltage:.2f}V", 20, 55)
                 display.show()
@@ -519,8 +519,8 @@ def calibrate_states():
                 display.fill(0)
                 display.text(f"State {current_position}", 30, 5)
                 display.text("SELECT=save", 20, 20)
-                display.text("DOWN=next/-20", 15, 30)
-                display.text("UP=finish/POT", 15, 40)
+                display.text("UP=next/-20", 15, 30)
+                display.text("DOWN=finish/POT", 15, 40)
                 display.text(f"Angle: {servo_angle}", 20, 50)
                 display.show()
                 
@@ -536,8 +536,8 @@ def calibrate_states():
                 display.fill(0)
                 display.text(f"State {current_position}", 30, 5)
                 display.text("SELECT=save", 20, 20)
-                display.text("DOWN=next/-20", 15, 30)
-                display.text("UP=finish/POT", 15, 40)
+                display.text("UP=next/-20", 15, 30)
+                display.text("DOWN=finish/POT", 15, 40)
                 display.text(f"Angle: {servo_angle}", 20, 50)
                 display.show()
                 
@@ -548,8 +548,8 @@ def calibrate_states():
                     display.fill(0)
                     display.text("Finish setup?", 15, 10)
                     display.text(f"{len(state_colors)} states", 25, 25)
-                    display.text("UP=YES", 30, 40)
-                    display.text("DOWN=NO/POT", 20, 50)
+                    display.text("DOWN=YES", 30, 40)
+                    display.text("UP=NO/POT", 20, 50)
                     display.show()
                     
                     # Wait for button release
