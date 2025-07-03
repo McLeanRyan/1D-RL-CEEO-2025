@@ -1,5 +1,5 @@
 """
-File: main.py
+File: standalone.py
 Purpose: MicroPython program for Reinforcement Learning activity using VEML6040 color sensor
 Fixed version with proper servo control and potentiometer handling
 """
@@ -311,7 +311,7 @@ def setloggingmode():
 
 # Q-Learning Agent Class
 class QLearningAgent:
-    def __init__(self, env, alpha=0.1, gamma=0.9, epsilon=0.1):
+    def __init__(self, env, alpha=0.1, gamma=0.9, epsilon=0.1): # Student TODO: Try changing alpha and gamma
         self.env = env
         self.alpha = alpha
         self.gamma = gamma
@@ -354,7 +354,7 @@ class QLearningAgent:
 
 # Environment Class
 class Environment:
-    def __init__(self, points, index):
+    def __init__(self, points, index): # Student TODO: Try changing/adding new rewards
         self.states = dict(zip(index, points))
         self.goal_state = [len(points) - 1]  # Last state is goal
         self.end_state = [0, len(index)-1]
@@ -660,7 +660,7 @@ def main():
     time.sleep(0.5)
     
     # Q-Learning parameters
-    EPSILON = 0.1 
+    EPSILON = 0.1 # Student TODO: Try changing the Q learning Values
     agent = QLearningAgent(env, epsilon=EPSILON)
     
     rewards_history = []
