@@ -432,7 +432,7 @@ def calibrate_states():
     button_pressed = False
     servo_angle = 180  # Start at 180 degrees (reversed)
     ANGLE_INCREMENT = 20  # 20 degrees between states
-    pot_mode = False  # Toggle for potentiometer control
+    pot_mode = True  # Toggle for potentiometer control
     last_pot_angle = -1  # Track last pot angle to reduce updates
     pot_threshold = 2  # Only update if angle changes by more than this
     
@@ -445,7 +445,7 @@ def calibrate_states():
     display.text(f"State {current_position}", 30, 5)
     display.text("SELECT=save", 20, 20)
     display.text("UP=next/-20", 15, 30)
-    display.text("DOWN=finish/POT", 15, 40)
+    display.text("DWN=finish/POT", 15, 40)
     display.text(f"Angle: {servo_angle}", 20, 50)
     display.show()
     
@@ -487,7 +487,7 @@ def calibrate_states():
                 display.text(f"State {current_position}", 30, 5)
                 display.text("POT CONTROL", 25, 15)
                 display.text("SELECT=save", 20, 25)
-                display.text("DOWN=exit POT", 20, 35)
+                display.text("DWN=exit POT", 20, 35)
                 display.text(f"Angle: {servo_angle}", 20, 45)
                 display.text(f"V: {voltage:.2f}V", 20, 55)
                 display.show()
@@ -520,7 +520,7 @@ def calibrate_states():
                 display.text(f"State {current_position}", 30, 5)
                 display.text("SELECT=save", 20, 20)
                 display.text("UP=next/-20", 15, 30)
-                display.text("DOWN=finish/POT", 15, 40)
+                display.text("DWN=finish/POT", 15, 40)
                 display.text(f"Angle: {servo_angle}", 20, 50)
                 display.show()
                 
@@ -537,7 +537,7 @@ def calibrate_states():
                 display.text(f"State {current_position}", 30, 5)
                 display.text("SELECT=save", 20, 20)
                 display.text("UP=next/-20", 15, 30)
-                display.text("DOWN=finish/POT", 15, 40)
+                display.text("DWN=finish/POT", 15, 40)
                 display.text(f"Angle: {servo_angle}", 20, 50)
                 display.show()
                 
