@@ -512,7 +512,7 @@ def calibrate_states():
                 time.sleep(1.5)
                 
                 current_position += 1
-                pot_mode = False  # Exit pot mode after saving
+                pot_mode = True  # Exit pot mode after saving
                 update_counter = 0  # Reset counter
                 
                 # Show next state screen
